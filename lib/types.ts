@@ -9,9 +9,16 @@ export interface User {
   role: UserRole
   company?: string
   phone?: string
-  vehicle_type?: string // tipo de vehículo disponible
-  availability_zones?: string[] // zonas donde puede ayudar
-  skills?: string[] // habilidades (transporte, coordinación, etc.)
+  // Información específica para voluntarios
+  vehicle_type?: string
+  availability_zones?: string[]
+  skills?: string[]
+  // Información adicional para voluntarios
+  volunteerInfo?: {
+    tipoVehiculo: string
+    zonas: string[]
+    habilidades: string[]
+  }
   created_at: string
 }
 

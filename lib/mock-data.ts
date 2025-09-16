@@ -20,6 +20,22 @@ export const mockUsers: User[] = [
     phone: "+34 600 789 012",
     created_at: "2024-01-20T14:30:00Z",
   },
+  {
+    id: "3",
+    email: "voluntario@ejemplo.com",
+    name: "Carlos Mendoza",
+    role: "voluntario",
+    phone: "+34 600 345 678",
+    vehicle_type: "furgoneta",
+    availability_zones: ["Madrid Centro", "Madrid Norte", "Madrid Sur"],
+    skills: ["Transporte", "Coordinación", "Carga/Descarga"],
+    volunteerInfo: {
+      tipoVehiculo: "Furgoneta",
+      zonas: ["Madrid Centro", "Madrid Norte", "Madrid Sur"],
+      habilidades: ["Transporte", "Coordinación", "Carga/Descarga"],
+    },
+    created_at: "2024-01-25T09:15:00Z",
+  },
 ]
 
 export const mockMaterials: Material[] = [
